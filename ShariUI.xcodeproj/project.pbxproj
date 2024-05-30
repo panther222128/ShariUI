@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A99D19972C08A87E004042FD /* ShariUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D19962C08A87E004042FD /* ShariUIApp.swift */; };
+		A99D19992C08A87E004042FD /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D19982C08A87E004042FD /* ContainerView.swift */; };
+		A99D199B2C08A883004042FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99D199A2C08A883004042FD /* Assets.xcassets */; };
+		A99D199E2C08A883004042FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99D199D2C08A883004042FD /* Preview Assets.xcassets */; };
+		A99D19A72C08A8FE004042FD /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D19A62C08A8FE004042FD /* AppFlowCoordinator.swift */; };
+		A99D19A92C08A907004042FD /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D19A82C08A907004042FD /* AppDIContainer.swift */; };
+		A99D19AB2C08A913004042FD /* SceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D19AA2C08A913004042FD /* SceneDIContainer.swift */; };
+		A99D19AD2C08A928004042FD /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D19AC2C08A928004042FD /* AppConfiguration.swift */; };
+		A99D19AF2C08A9BF004042FD /* ViewFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D19AE2C08A9BF004042FD /* ViewFlowCoordinator.swift */; };
+		A99D19B12C08AABA004042FD /* RestaurantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D19B02C08AABA004042FD /* RestaurantListView.swift */; };
+		A99D19B42C08AEEA004042FD /* RestaurantListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D19B32C08AEEA004042FD /* RestaurantListViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A99D19932C08A87E004042FD /* ShariUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShariUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A99D19962C08A87E004042FD /* ShariUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShariUIApp.swift; sourceTree = "<group>"; };
+		A99D19982C08A87E004042FD /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		A99D199A2C08A883004042FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A99D199D2C08A883004042FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A99D19A62C08A8FE004042FD /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		A99D19A82C08A907004042FD /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		A99D19AA2C08A913004042FD /* SceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDIContainer.swift; sourceTree = "<group>"; };
+		A99D19AC2C08A928004042FD /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		A99D19AE2C08A9BF004042FD /* ViewFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFlowCoordinator.swift; sourceTree = "<group>"; };
+		A99D19B02C08AABA004042FD /* RestaurantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListView.swift; sourceTree = "<group>"; };
+		A99D19B32C08AEEA004042FD /* RestaurantListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A99D19902C08A87E004042FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A99D198A2C08A87D004042FD = {
+			isa = PBXGroup;
+			children = (
+				A99D19952C08A87E004042FD /* ShariUI */,
+				A99D19942C08A87E004042FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A99D19942C08A87E004042FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A99D19932C08A87E004042FD /* ShariUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A99D19952C08A87E004042FD /* ShariUI */ = {
+			isa = PBXGroup;
+			children = (
+				A99D19A42C08A8E0004042FD /* Application */,
+				A99D19A52C08A8E9004042FD /* Presentation */,
+				A99D199A2C08A883004042FD /* Assets.xcassets */,
+				A99D199C2C08A883004042FD /* Preview Content */,
+			);
+			path = ShariUI;
+			sourceTree = "<group>";
+		};
+		A99D199C2C08A883004042FD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A99D199D2C08A883004042FD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A99D19A42C08A8E0004042FD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A99D19962C08A87E004042FD /* ShariUIApp.swift */,
+				A99D19A62C08A8FE004042FD /* AppFlowCoordinator.swift */,
+				A99D19A82C08A907004042FD /* AppDIContainer.swift */,
+				A99D19AA2C08A913004042FD /* SceneDIContainer.swift */,
+				A99D19AC2C08A928004042FD /* AppConfiguration.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A99D19A52C08A8E9004042FD /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A99D19AE2C08A9BF004042FD /* ViewFlowCoordinator.swift */,
+				A99D19982C08A87E004042FD /* ContainerView.swift */,
+				A99D19B22C08AEC5004042FD /* RestaurantListView */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A99D19B22C08AEC5004042FD /* RestaurantListView */ = {
+			isa = PBXGroup;
+			children = (
+				A99D19B02C08AABA004042FD /* RestaurantListView.swift */,
+				A99D19B32C08AEEA004042FD /* RestaurantListViewModel.swift */,
+			);
+			path = RestaurantListView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A99D19922C08A87E004042FD /* ShariUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A99D19A12C08A883004042FD /* Build configuration list for PBXNativeTarget "ShariUI" */;
+			buildPhases = (
+				A99D198F2C08A87E004042FD /* Sources */,
+				A99D19902C08A87E004042FD /* Frameworks */,
+				A99D19912C08A87E004042FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShariUI;
+			productName = ShariUI;
+			productReference = A99D19932C08A87E004042FD /* ShariUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A99D198B2C08A87D004042FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					A99D19922C08A87E004042FD = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = A99D198E2C08A87D004042FD /* Build configuration list for PBXProject "ShariUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A99D198A2C08A87D004042FD;
+			productRefGroup = A99D19942C08A87E004042FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A99D19922C08A87E004042FD /* ShariUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A99D19912C08A87E004042FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A99D199E2C08A883004042FD /* Preview Assets.xcassets in Resources */,
+				A99D199B2C08A883004042FD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A99D198F2C08A87E004042FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A99D19AD2C08A928004042FD /* AppConfiguration.swift in Sources */,
+				A99D19A92C08A907004042FD /* AppDIContainer.swift in Sources */,
+				A99D19992C08A87E004042FD /* ContainerView.swift in Sources */,
+				A99D19B12C08AABA004042FD /* RestaurantListView.swift in Sources */,
+				A99D19B42C08AEEA004042FD /* RestaurantListViewModel.swift in Sources */,
+				A99D19A72C08A8FE004042FD /* AppFlowCoordinator.swift in Sources */,
+				A99D19AF2C08A9BF004042FD /* ViewFlowCoordinator.swift in Sources */,
+				A99D19AB2C08A913004042FD /* SceneDIContainer.swift in Sources */,
+				A99D19972C08A87E004042FD /* ShariUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A99D199F2C08A883004042FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A99D19A02C08A883004042FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A99D19A22C08A883004042FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShariUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 3ZJJVW89MW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.horus222128.ShariUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A99D19A32C08A883004042FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShariUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 3ZJJVW89MW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.horus222128.ShariUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A99D198E2C08A87D004042FD /* Build configuration list for PBXProject "ShariUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99D199F2C08A883004042FD /* Debug */,
+				A99D19A02C08A883004042FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A99D19A12C08A883004042FD /* Build configuration list for PBXNativeTarget "ShariUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99D19A22C08A883004042FD /* Debug */,
+				A99D19A32C08A883004042FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A99D198B2C08A87D004042FD /* Project object */;
+}
