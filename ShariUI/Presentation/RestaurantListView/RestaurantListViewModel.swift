@@ -15,6 +15,10 @@ protocol RestaurantListViewModel {
 @Observable
 final class DefaultRestaurantListViewModel: RestaurantListViewModel {
     
+    private let repository: ReviewListRepository
     
+    init(repository: ReviewListRepository) {
+        self.repository = repository
+    }
     
 }

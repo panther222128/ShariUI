@@ -10,10 +10,12 @@ import SwiftUI
 final class SceneDIContainer: ViewFlowCoordinatorDependencies {
     
     struct Dependencies {
-        
+        let fileGenerator: FileGenerator
     }
     
     private let dependencies: Dependencies
+    
+    lazy var reviewListStorage: ReviewListStorage = DefaultReviewListStorage()
     
     init(dependencies: Dependencies) {
         self.dependencies = dependencies
@@ -23,9 +25,13 @@ final class SceneDIContainer: ViewFlowCoordinatorDependencies {
         return ViewFlowCoordinator(dependencies: self)
     }
     
+    private func makeReviewListRepository() -> ReviewListRepository {
+        return DefaultReviewListRepository(storage: reviewListStorage, fileGenerator: dependencies.fileGenerator)
+    }
+    
     @MainActor
     private func makeRestaurantListViewModel() -> RestaurantListViewModel {
-        return DefaultRestaurantListViewModel()
+        return DefaultRestaurantListViewModel(repository: makeReviewListRepository())
     }
     
     @MainActor

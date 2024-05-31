@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A98973862C0A01FC008B1DC1 /* ReviewListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98973852C0A01FC008B1DC1 /* ReviewListRepository.swift */; };
+		A989738A2C0A0226008B1DC1 /* DefaultReviewListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98973892C0A0226008B1DC1 /* DefaultReviewListRepository.swift */; };
+		A989738D2C0A0270008B1DC1 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989738C2C0A0270008B1DC1 /* Dish.swift */; };
+		A989738F2C0A0276008B1DC1 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989738E2C0A0276008B1DC1 /* Restaurant.swift */; };
+		A98973912C0A0283008B1DC1 /* TasteCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98973902C0A0283008B1DC1 /* TasteCategory.swift */; };
+		A98973932C0A02D1008B1DC1 /* ReviewListStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98973922C0A02D1008B1DC1 /* ReviewListStorage.swift */; };
+		A98973952C0A02DF008B1DC1 /* FileGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98973942C0A02DF008B1DC1 /* FileGenerator.swift */; };
+		A98973972C0A030C008B1DC1 /* RestaurantEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98973962C0A030C008B1DC1 /* RestaurantEntity.swift */; };
+		A98973992C0A0313008B1DC1 /* DishEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98973982C0A0313008B1DC1 /* DishEntity.swift */; };
 		A99D19972C08A87E004042FD /* ShariUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D19962C08A87E004042FD /* ShariUIApp.swift */; };
 		A99D19992C08A87E004042FD /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D19982C08A87E004042FD /* ContainerView.swift */; };
 		A99D199B2C08A883004042FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99D199A2C08A883004042FD /* Assets.xcassets */; };
@@ -21,6 +30,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A98973852C0A01FC008B1DC1 /* ReviewListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListRepository.swift; sourceTree = "<group>"; };
+		A98973892C0A0226008B1DC1 /* DefaultReviewListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultReviewListRepository.swift; sourceTree = "<group>"; };
+		A989738C2C0A0270008B1DC1 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		A989738E2C0A0276008B1DC1 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		A98973902C0A0283008B1DC1 /* TasteCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteCategory.swift; sourceTree = "<group>"; };
+		A98973922C0A02D1008B1DC1 /* ReviewListStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListStorage.swift; sourceTree = "<group>"; };
+		A98973942C0A02DF008B1DC1 /* FileGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileGenerator.swift; sourceTree = "<group>"; };
+		A98973962C0A030C008B1DC1 /* RestaurantEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantEntity.swift; sourceTree = "<group>"; };
+		A98973982C0A0313008B1DC1 /* DishEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishEntity.swift; sourceTree = "<group>"; };
 		A99D19932C08A87E004042FD /* ShariUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShariUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99D19962C08A87E004042FD /* ShariUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShariUIApp.swift; sourceTree = "<group>"; };
 		A99D19982C08A87E004042FD /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
@@ -46,6 +64,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A98973812C0A01AB008B1DC1 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				A98973942C0A02DF008B1DC1 /* FileGenerator.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		A98973822C0A01B3008B1DC1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A98973882C0A0213008B1DC1 /* Storage */,
+				A98973872C0A0204008B1DC1 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A98973832C0A01C0008B1DC1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A989738B2C0A0256008B1DC1 /* Entities */,
+				A98973842C0A01CD008B1DC1 /* Interfaces */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A98973842C0A01CD008B1DC1 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				A98973852C0A01FC008B1DC1 /* ReviewListRepository.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		A98973872C0A0204008B1DC1 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A98973892C0A0226008B1DC1 /* DefaultReviewListRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A98973882C0A0213008B1DC1 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				A98973922C0A02D1008B1DC1 /* ReviewListStorage.swift */,
+				A98973962C0A030C008B1DC1 /* RestaurantEntity.swift */,
+				A98973982C0A0313008B1DC1 /* DishEntity.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		A989738B2C0A0256008B1DC1 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A989738C2C0A0270008B1DC1 /* Dish.swift */,
+				A989738E2C0A0276008B1DC1 /* Restaurant.swift */,
+				A98973902C0A0283008B1DC1 /* TasteCategory.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		A99D198A2C08A87D004042FD = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +145,9 @@
 		A99D19952C08A87E004042FD /* ShariUI */ = {
 			isa = PBXGroup;
 			children = (
+				A98973832C0A01C0008B1DC1 /* Domain */,
+				A98973822C0A01B3008B1DC1 /* Data */,
+				A98973812C0A01AB008B1DC1 /* Infrastructure */,
 				A99D19A42C08A8E0004042FD /* Application */,
 				A99D19A52C08A8E9004042FD /* Presentation */,
 				A99D199A2C08A883004042FD /* Assets.xcassets */,
@@ -182,13 +265,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A989738F2C0A0276008B1DC1 /* Restaurant.swift in Sources */,
 				A99D19AD2C08A928004042FD /* AppConfiguration.swift in Sources */,
+				A989738A2C0A0226008B1DC1 /* DefaultReviewListRepository.swift in Sources */,
 				A99D19A92C08A907004042FD /* AppDIContainer.swift in Sources */,
+				A98973992C0A0313008B1DC1 /* DishEntity.swift in Sources */,
 				A99D19992C08A87E004042FD /* ContainerView.swift in Sources */,
+				A98973952C0A02DF008B1DC1 /* FileGenerator.swift in Sources */,
 				A99D19B12C08AABA004042FD /* RestaurantListView.swift in Sources */,
 				A99D19B42C08AEEA004042FD /* RestaurantListViewModel.swift in Sources */,
 				A99D19A72C08A8FE004042FD /* AppFlowCoordinator.swift in Sources */,
 				A99D19AF2C08A9BF004042FD /* ViewFlowCoordinator.swift in Sources */,
+				A98973972C0A030C008B1DC1 /* RestaurantEntity.swift in Sources */,
+				A98973912C0A0283008B1DC1 /* TasteCategory.swift in Sources */,
+				A98973862C0A01FC008B1DC1 /* ReviewListRepository.swift in Sources */,
+				A98973932C0A02D1008B1DC1 /* ReviewListStorage.swift in Sources */,
+				A989738D2C0A0270008B1DC1 /* Dish.swift in Sources */,
 				A99D19AB2C08A913004042FD /* SceneDIContainer.swift in Sources */,
 				A99D19972C08A87E004042FD /* ShariUIApp.swift in Sources */,
 			);
