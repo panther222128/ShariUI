@@ -25,18 +25,10 @@ final class DefaultReviewListRepository: ReviewListRepository {
         storage.addTaste(restaurantId: restaurantId, dishId: dishId, taste: taste)
     }
     
-    func fetchRestaurants(completion: @escaping (Result<[Restaurant], Error>) -> Void) {
-        storage.fetchRestaurants { result in
-            switch result {
-            case .success(let data):
-                let domain = data.map { $0.toDomain() }
-                completion(.success(domain))
-                
-            case .failure(let error):
-                completion(.failure(error))
-                
-            }
-        }
+    func fetchRestaurants() async throws -> [Restaurant] {
+        let data = try await storage.fetchRestaurants()
+        let domain = data.map { $0.toDomain() }
+        return domain
     }
     
     func deleteRestaurant(restaurantId: String) {

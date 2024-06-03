@@ -11,11 +11,12 @@ import SwiftData
 enum ReviewListStorageError: Error {
     case cannotFindRestaurants
     case cannotFindRestaurant
+    case cannotFindContext
 }
 
 protocol ReviewListStorage {
     func saveRestaurant(restaurantId: String, name: String)
-    func fetchRestaurants(completion: @escaping (Result<[RestaurantEntity], Error>) -> Void)
+    func fetchRestaurants() async throws -> [RestaurantEntity]
     func deleteRestaurant(restaurantId: String)
     func deleteDish(restaurantId: String, dishId: String)
     func saveDish(restaurantId: String, dish: Dish)
@@ -51,15 +52,17 @@ final class DefaultReviewListStorage: ReviewListStorage {
         }
     }
     
-    func fetchRestaurants(completion: @escaping (Result<[RestaurantEntity], Error>) -> Void) {
+    func fetchRestaurants() async throws -> [RestaurantEntity] {
         let descriptor = FetchDescriptor<RestaurantEntity>(sortBy: [SortDescriptor<RestaurantEntity>(\.date)])
         if let context {
             do {
                 let data = try context.fetch(descriptor)
-                completion(.success(data))
+                return data
             } catch {
-                completion(.failure(error))
+                throw ReviewListStorageError.cannotFindRestaurants
             }
+        } else {
+            throw ReviewListStorageError.cannotFindContext
         }
     }
     

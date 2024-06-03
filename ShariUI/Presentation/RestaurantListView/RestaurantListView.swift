@@ -9,11 +9,16 @@ import SwiftUI
 
 struct RestaurantListView: View {
     
-    private let viewModel: (any RestaurantListViewModel)!
+    private var viewModel: (any RestaurantListViewModel)!
     
     var body: some View {
         List {
-            
+            ForEach(viewModel.listItems) { item in
+                VStack {
+                    Text(item.restaurantName)
+                    Text(item.date.formatYearMonthDate())
+                }
+            }
         }
         .toolbar {
             Button {
@@ -22,10 +27,14 @@ struct RestaurantListView: View {
                 Image(systemName: "plus")
             }
         }
+        .listStyle(.plain)
     }
     
     init(viewModel: (any RestaurantListViewModel)) {
         self.viewModel = viewModel
+        Task {
+            try await viewModel.loadListItems()
+        }
     }
     
 }
