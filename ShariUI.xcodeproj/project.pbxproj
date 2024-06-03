@@ -15,6 +15,7 @@
 		A0A112E72C0D7F4300ED69BB /* GlossaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A112E62C0D7F4300ED69BB /* GlossaryViewModel.swift */; };
 		A0A112E92C0D802300ED69BB /* GlossaryListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A112E82C0D802300ED69BB /* GlossaryListItemViewModel.swift */; };
 		A0A112EB2C0D808A00ED69BB /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A112EA2C0D808A00ED69BB /* SearchBar.swift */; };
+		A0A112EE2C0D99E100ED69BB /* RestaurantDishListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A112ED2C0D99E100ED69BB /* RestaurantDishListView.swift */; };
 		A98973862C0A01FC008B1DC1 /* ReviewListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98973852C0A01FC008B1DC1 /* ReviewListRepository.swift */; };
 		A989738A2C0A0226008B1DC1 /* DefaultReviewListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98973892C0A0226008B1DC1 /* DefaultReviewListRepository.swift */; };
 		A989738D2C0A0270008B1DC1 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989738C2C0A0270008B1DC1 /* Dish.swift */; };
@@ -46,6 +47,7 @@
 		A0A112E62C0D7F4300ED69BB /* GlossaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryViewModel.swift; sourceTree = "<group>"; };
 		A0A112E82C0D802300ED69BB /* GlossaryListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryListItemViewModel.swift; sourceTree = "<group>"; };
 		A0A112EA2C0D808A00ED69BB /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		A0A112ED2C0D99E100ED69BB /* RestaurantDishListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDishListView.swift; sourceTree = "<group>"; };
 		A98973852C0A01FC008B1DC1 /* ReviewListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListRepository.swift; sourceTree = "<group>"; };
 		A98973892C0A0226008B1DC1 /* DefaultReviewListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultReviewListRepository.swift; sourceTree = "<group>"; };
 		A989738C2C0A0270008B1DC1 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
@@ -105,6 +107,14 @@
 				A0A112E22C0D586600ED69BB /* Date+FormattedString.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A0A112EC2C0D99CB00ED69BB /* RestaurantDishListView */ = {
+			isa = PBXGroup;
+			children = (
+				A0A112ED2C0D99E100ED69BB /* RestaurantDishListView.swift */,
+			);
+			path = RestaurantDishListView;
 			sourceTree = "<group>";
 		};
 		A98973812C0A01AB008B1DC1 /* Infrastructure */ = {
@@ -226,6 +236,7 @@
 			children = (
 				A99D19AE2C08A9BF004042FD /* ViewFlowCoordinator.swift */,
 				A99D19982C08A87E004042FD /* ContainerView.swift */,
+				A0A112EC2C0D99CB00ED69BB /* RestaurantDishListView */,
 				A0A112C02C0D3AA100ED69BB /* SettingsView */,
 				A0A112BF2C0D3A9900ED69BB /* GlossaryView */,
 				A99D19B22C08AEC5004042FD /* RestaurantListView */,
@@ -335,6 +346,7 @@
 				A98973932C0A02D1008B1DC1 /* ReviewListStorage.swift in Sources */,
 				A0A112E72C0D7F4300ED69BB /* GlossaryViewModel.swift in Sources */,
 				A989738D2C0A0270008B1DC1 /* Dish.swift in Sources */,
+				A0A112EE2C0D99E100ED69BB /* RestaurantDishListView.swift in Sources */,
 				A99D19AB2C08A913004042FD /* SceneDIContainer.swift in Sources */,
 				A99D19972C08A87E004042FD /* ShariUIApp.swift in Sources */,
 				A0A112C22C0D3AB100ED69BB /* SettingsView.swift in Sources */,
