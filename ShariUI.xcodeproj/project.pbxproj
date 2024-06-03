@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0A112C22C0D3AB100ED69BB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A112C12C0D3AB100ED69BB /* SettingsView.swift */; };
+		A0A112C42C0D3AB800ED69BB /* GlossaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A112C32C0D3AB800ED69BB /* GlossaryView.swift */; };
 		A98973862C0A01FC008B1DC1 /* ReviewListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98973852C0A01FC008B1DC1 /* ReviewListRepository.swift */; };
 		A989738A2C0A0226008B1DC1 /* DefaultReviewListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98973892C0A0226008B1DC1 /* DefaultReviewListRepository.swift */; };
 		A989738D2C0A0270008B1DC1 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989738C2C0A0270008B1DC1 /* Dish.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0A112C12C0D3AB100ED69BB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A0A112C32C0D3AB800ED69BB /* GlossaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryView.swift; sourceTree = "<group>"; };
 		A98973852C0A01FC008B1DC1 /* ReviewListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListRepository.swift; sourceTree = "<group>"; };
 		A98973892C0A0226008B1DC1 /* DefaultReviewListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultReviewListRepository.swift; sourceTree = "<group>"; };
 		A989738C2C0A0270008B1DC1 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
@@ -64,6 +68,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0A112BF2C0D3A9900ED69BB /* GlossaryView */ = {
+			isa = PBXGroup;
+			children = (
+				A0A112C32C0D3AB800ED69BB /* GlossaryView.swift */,
+			);
+			path = GlossaryView;
+			sourceTree = "<group>";
+		};
+		A0A112C02C0D3AA100ED69BB /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				A0A112C12C0D3AB100ED69BB /* SettingsView.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
 		A98973812C0A01AB008B1DC1 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +201,8 @@
 			children = (
 				A99D19AE2C08A9BF004042FD /* ViewFlowCoordinator.swift */,
 				A99D19982C08A87E004042FD /* ContainerView.swift */,
+				A0A112C02C0D3AA100ED69BB /* SettingsView */,
+				A0A112BF2C0D3A9900ED69BB /* GlossaryView */,
 				A99D19B22C08AEC5004042FD /* RestaurantListView */,
 			);
 			path = Presentation;
@@ -277,12 +299,14 @@
 				A99D19A72C08A8FE004042FD /* AppFlowCoordinator.swift in Sources */,
 				A99D19AF2C08A9BF004042FD /* ViewFlowCoordinator.swift in Sources */,
 				A98973972C0A030C008B1DC1 /* RestaurantEntity.swift in Sources */,
+				A0A112C42C0D3AB800ED69BB /* GlossaryView.swift in Sources */,
 				A98973912C0A0283008B1DC1 /* TasteCategory.swift in Sources */,
 				A98973862C0A01FC008B1DC1 /* ReviewListRepository.swift in Sources */,
 				A98973932C0A02D1008B1DC1 /* ReviewListStorage.swift in Sources */,
 				A989738D2C0A0270008B1DC1 /* Dish.swift in Sources */,
 				A99D19AB2C08A913004042FD /* SceneDIContainer.swift in Sources */,
 				A99D19972C08A87E004042FD /* ShariUIApp.swift in Sources */,
+				A0A112C22C0D3AB100ED69BB /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +448,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +478,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

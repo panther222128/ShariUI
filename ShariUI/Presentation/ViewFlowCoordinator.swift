@@ -9,6 +9,8 @@ import Foundation
 
 protocol ViewFlowCoordinatorDependencies {
     func makeRestaurantListView() -> RestaurantListView
+    func makeGlossaryView() -> GlossaryView
+    func makeSettingsView() -> SettingsView
 }
 
 final class ViewFlowCoordinator {
@@ -25,6 +27,14 @@ final class ViewFlowCoordinator {
     
     func makeRestaurantListView() -> RestaurantListView {
         return dependencies.makeRestaurantListView()
+    }
+    
+    func makeGlossaryView() -> GlossaryView {
+        return dependencies.makeGlossaryView()
+    }
+    
+    func makeSettingsView() -> SettingsView {
+        return dependencies.makeSettingsView()
     }
     
 }

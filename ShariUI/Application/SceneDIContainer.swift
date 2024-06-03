@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 final class SceneDIContainer: ViewFlowCoordinatorDependencies {
     
@@ -37,6 +38,16 @@ final class SceneDIContainer: ViewFlowCoordinatorDependencies {
     @MainActor
     func makeRestaurantListView() -> RestaurantListView {
         return RestaurantListView(viewModel: makeRestaurantListViewModel())
+    }
+    
+    @MainActor
+    func makeGlossaryView() -> GlossaryView {
+        return GlossaryView()
+    }
+    
+    @MainActor
+    func makeSettingsView() -> SettingsView {
+        return SettingsView()
     }
     
 }

@@ -19,6 +19,15 @@ struct ContainerView: View {
                         Label("오마카세", systemImage: "list.bullet")
                     }
                 
+                viewFlowCoordinator.makeGlossaryView()
+                    .tabItem {
+                        Label("용어사전", systemImage: "book.closed")
+                    }
+                
+                viewFlowCoordinator.makeSettingsView()
+                    .tabItem {
+                        Label("설정", systemImage: "gear")
+                    }
             }
         }
     }
