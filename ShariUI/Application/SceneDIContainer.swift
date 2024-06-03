@@ -41,8 +41,13 @@ final class SceneDIContainer: ViewFlowCoordinatorDependencies {
     }
     
     @MainActor
+    private func makeGlossaryViewModel() -> GlossaryViewModel {
+        return DefaultGlossaryViewModel()
+    }
+    
+    @MainActor
     func makeGlossaryView() -> GlossaryView {
-        return GlossaryView()
+        return GlossaryView(viewModel: makeGlossaryViewModel())
     }
     
     @MainActor

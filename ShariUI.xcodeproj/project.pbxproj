@@ -12,6 +12,9 @@
 		A0A112E02C0D554B00ED69BB /* RestaurantListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A112DF2C0D554B00ED69BB /* RestaurantListItemViewModel.swift */; };
 		A0A112E32C0D586600ED69BB /* Date+FormattedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A112E22C0D586600ED69BB /* Date+FormattedString.swift */; };
 		A0A112E52C0D5A1200ED69BB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A112E42C0D5A1200ED69BB /* Constants.swift */; };
+		A0A112E72C0D7F4300ED69BB /* GlossaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A112E62C0D7F4300ED69BB /* GlossaryViewModel.swift */; };
+		A0A112E92C0D802300ED69BB /* GlossaryListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A112E82C0D802300ED69BB /* GlossaryListItemViewModel.swift */; };
+		A0A112EB2C0D808A00ED69BB /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A112EA2C0D808A00ED69BB /* SearchBar.swift */; };
 		A98973862C0A01FC008B1DC1 /* ReviewListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98973852C0A01FC008B1DC1 /* ReviewListRepository.swift */; };
 		A989738A2C0A0226008B1DC1 /* DefaultReviewListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98973892C0A0226008B1DC1 /* DefaultReviewListRepository.swift */; };
 		A989738D2C0A0270008B1DC1 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989738C2C0A0270008B1DC1 /* Dish.swift */; };
@@ -40,6 +43,9 @@
 		A0A112DF2C0D554B00ED69BB /* RestaurantListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListItemViewModel.swift; sourceTree = "<group>"; };
 		A0A112E22C0D586600ED69BB /* Date+FormattedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+FormattedString.swift"; sourceTree = "<group>"; };
 		A0A112E42C0D5A1200ED69BB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A0A112E62C0D7F4300ED69BB /* GlossaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryViewModel.swift; sourceTree = "<group>"; };
+		A0A112E82C0D802300ED69BB /* GlossaryListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryListItemViewModel.swift; sourceTree = "<group>"; };
+		A0A112EA2C0D808A00ED69BB /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		A98973852C0A01FC008B1DC1 /* ReviewListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListRepository.swift; sourceTree = "<group>"; };
 		A98973892C0A0226008B1DC1 /* DefaultReviewListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultReviewListRepository.swift; sourceTree = "<group>"; };
 		A989738C2C0A0270008B1DC1 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
@@ -78,6 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				A0A112C32C0D3AB800ED69BB /* GlossaryView.swift */,
+				A0A112E62C0D7F4300ED69BB /* GlossaryViewModel.swift */,
+				A0A112E82C0D802300ED69BB /* GlossaryListItemViewModel.swift */,
+				A0A112EA2C0D808A00ED69BB /* SearchBar.swift */,
 			);
 			path = GlossaryView;
 			sourceTree = "<group>";
@@ -304,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A112E92C0D802300ED69BB /* GlossaryListItemViewModel.swift in Sources */,
 				A989738F2C0A0276008B1DC1 /* Restaurant.swift in Sources */,
 				A99D19AD2C08A928004042FD /* AppConfiguration.swift in Sources */,
 				A989738A2C0A0226008B1DC1 /* DefaultReviewListRepository.swift in Sources */,
@@ -316,12 +326,14 @@
 				A99D19B42C08AEEA004042FD /* RestaurantListViewModel.swift in Sources */,
 				A99D19A72C08A8FE004042FD /* AppFlowCoordinator.swift in Sources */,
 				A99D19AF2C08A9BF004042FD /* ViewFlowCoordinator.swift in Sources */,
+				A0A112EB2C0D808A00ED69BB /* SearchBar.swift in Sources */,
 				A98973972C0A030C008B1DC1 /* RestaurantEntity.swift in Sources */,
 				A0A112C42C0D3AB800ED69BB /* GlossaryView.swift in Sources */,
 				A98973912C0A0283008B1DC1 /* TasteCategory.swift in Sources */,
 				A98973862C0A01FC008B1DC1 /* ReviewListRepository.swift in Sources */,
 				A0A112E02C0D554B00ED69BB /* RestaurantListItemViewModel.swift in Sources */,
 				A98973932C0A02D1008B1DC1 /* ReviewListStorage.swift in Sources */,
+				A0A112E72C0D7F4300ED69BB /* GlossaryViewModel.swift in Sources */,
 				A989738D2C0A0270008B1DC1 /* Dish.swift in Sources */,
 				A99D19AB2C08A913004042FD /* SceneDIContainer.swift in Sources */,
 				A99D19972C08A87E004042FD /* ShariUIApp.swift in Sources */,
