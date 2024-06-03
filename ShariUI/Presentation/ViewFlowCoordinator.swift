@@ -8,11 +8,14 @@
 import Foundation
 
 protocol ViewFlowCoordinatorDependencies {
-    func makeRestaurantListView() -> RestaurantListView
+    func makeRestaurantListView(actions: RestaurantListViewModelActions) -> RestaurantListView
     func makeGlossaryView() -> GlossaryView
     func makeSettingsView() -> SettingsView
+    
+    func makeRestaurantDishListView() -> RestaurantDishListView
 }
 
+// MARK: - NavigationStack
 final class ViewFlowCoordinator {
     
     private let dependencies: ViewFlowCoordinatorDependencies
@@ -26,7 +29,8 @@ final class ViewFlowCoordinator {
     }
     
     func makeRestaurantListView() -> RestaurantListView {
-        return dependencies.makeRestaurantListView()
+        let actions: RestaurantListViewModelActions = .init(showRestaurantDishListView: showRestaurantDishListView(restaurant:))
+        return dependencies.makeRestaurantListView(actions: actions)
     }
     
     func makeGlossaryView() -> GlossaryView {
@@ -35,6 +39,10 @@ final class ViewFlowCoordinator {
     
     func makeSettingsView() -> SettingsView {
         return dependencies.makeSettingsView()
+    }
+    
+    private func showRestaurantDishListView(restaurant: Restaurant) -> RestaurantDishListView {
+        return dependencies.makeRestaurantDishListView()
     }
     
 }

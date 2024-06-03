@@ -31,13 +31,13 @@ final class SceneDIContainer: ViewFlowCoordinatorDependencies {
     }
     
     @MainActor
-    private func makeRestaurantListViewModel() -> RestaurantListViewModel {
-        return DefaultRestaurantListViewModel(repository: makeReviewListRepository())
+    private func makeRestaurantListViewModel(actions: RestaurantListViewModelActions) -> RestaurantListViewModel {
+        return DefaultRestaurantListViewModel(repository: makeReviewListRepository(), actions: actions)
     }
     
     @MainActor
-    func makeRestaurantListView() -> RestaurantListView {
-        return RestaurantListView(viewModel: makeRestaurantListViewModel())
+    func makeRestaurantListView(actions: RestaurantListViewModelActions) -> RestaurantListView {
+        return RestaurantListView(viewModel: makeRestaurantListViewModel(actions: actions))
     }
     
     @MainActor
@@ -53,6 +53,11 @@ final class SceneDIContainer: ViewFlowCoordinatorDependencies {
     @MainActor
     func makeSettingsView() -> SettingsView {
         return SettingsView()
+    }
+    
+    @MainActor
+    func makeRestaurantDishListView() -> RestaurantDishListView {
+        return RestaurantDishListView()
     }
     
 }
