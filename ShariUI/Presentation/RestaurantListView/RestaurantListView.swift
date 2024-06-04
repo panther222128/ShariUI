@@ -16,7 +16,15 @@ struct RestaurantListView: View {
     var body: some View {
         List {
             ForEach(viewModel.listItems) { item in
-                viewModel.didSelectItem(restaurant: item)
+                viewModel.didSelectItem(restaurant: item)?
+                    .swipeActions(edge: .trailing) {
+                        Button(role: .destructive) {
+                            viewModel.didDeleteRestaurant(restaurantId: item.id)
+                        } label: {
+                            Text("삭제")
+                        }
+                    }
+                    
             }
         }
         .toolbar {
@@ -30,9 +38,7 @@ struct RestaurantListView: View {
                 Button("취소") {
                     
                 }
-                Button("확인") {
-                    
-                }
+                viewModel.didConfirm(restaurantName: name)
             }
         }
         .listStyle(.plain)

@@ -16,6 +16,8 @@ struct DishDetailView: View {
     var body: some View {
         ScrollView(.vertical) {
             Image(uiImage: UIImage(data: viewModel.thumbnailImageData ?? Data()) ?? UIImage())
+                .resizable()
+                .aspectRatio(contentMode: .fit)
             VStack {
                 ForEach(viewModel.tasteItems) { taste in
                     Text(taste.taste)

@@ -6,16 +6,21 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct StudioView: View {
     
-    @State private var cameraPreviewView: CameraPreviewView
+    @State var cameraPreviewView: CameraPreviewView
     
     var body: some View {
         ZStack {
             cameraPreviewView
                 .ignoresSafeArea()
         }
+    }
+    
+    init() {
+        self.cameraPreviewView = CameraPreviewView(session: AVCaptureSession())
     }
     
 }

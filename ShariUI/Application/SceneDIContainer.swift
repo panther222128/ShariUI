@@ -59,4 +59,9 @@ final class SceneDIContainer: ViewFlowCoordinatorDependencies {
         return RestaurantDishListView()
     }
     
+    @MainActor
+    func makeStudioView() -> StudioView {
+        return StudioView()
+    }
+    
 }

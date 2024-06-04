@@ -13,6 +13,7 @@ protocol ViewFlowCoordinatorDependencies {
     func makeSettingsView() -> SettingsView
     
     func makeRestaurantDishListView() -> RestaurantDishListView
+    func makeStudioView() -> StudioView
 }
 
 // MARK: - NavigationStack
@@ -25,28 +26,28 @@ struct ViewFlowCoordinator: View {
     }
     
     var body: some View {
-        NavigationStack {
-            TabView {
-                dependencies.makeRestaurantListView(actions: .init(showRestaurantDishListView: showRestaurantDishListView(restaurant:)))
-                    .tabItem {
-                        Label("오마카세", systemImage: "list.bullet")
-                    }
-                
-                dependencies.makeGlossaryView()
-                    .tabItem {
-                        Label("용어사전", systemImage: "book.closed")
-                    }
-                
-                dependencies.makeSettingsView()
-                    .tabItem {
-                        Label("설정", systemImage: "gear")
-                    }
+        TabView {
+            NavigationStack {
+                makeRestaurantListView()
             }
+            .tabItem {
+                Label("오마카세", systemImage: "list.bullet")
+            }
+            
+            dependencies.makeGlossaryView()
+                .tabItem {
+                    Label("용어사전", systemImage: "book.closed")
+                }
+            
+            dependencies.makeSettingsView()
+                .tabItem {
+                    Label("설정", systemImage: "gear")
+                }
         }
     }
 
     func makeRestaurantListView() -> RestaurantListView {
-        let actions: RestaurantListViewModelActions = .init(showRestaurantDishListView: showRestaurantDishListView(restaurant:))
+        let actions: RestaurantListViewModelActions = .init(showStudioView: showStudioView(restaurantId:restaurantName:), showRestaurantDishListView: showRestaurantDishListView(restaurant:))
         return dependencies.makeRestaurantListView(actions: actions)
     }
     
@@ -63,6 +64,14 @@ struct ViewFlowCoordinator: View {
             VStack {
                 Text(restaurant.name)
                 Text(restaurant.date.formatYearMonthDate())
+            }
+        }
+    }
+    
+    private func showStudioView(restaurantId: String, restaurantName: String) -> NavigationLink<Button<Text>, StudioView> {
+        NavigationLink(destination: dependencies.makeStudioView()) {
+            Button("확인") {
+                
             }
         }
     }
