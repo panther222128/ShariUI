@@ -26,7 +26,6 @@
 		A98973972C0A030C008B1DC1 /* RestaurantEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98973962C0A030C008B1DC1 /* RestaurantEntity.swift */; };
 		A98973992C0A0313008B1DC1 /* DishEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98973982C0A0313008B1DC1 /* DishEntity.swift */; };
 		A99D19972C08A87E004042FD /* ShariUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D19962C08A87E004042FD /* ShariUIApp.swift */; };
-		A99D19992C08A87E004042FD /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D19982C08A87E004042FD /* ContainerView.swift */; };
 		A99D199B2C08A883004042FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99D199A2C08A883004042FD /* Assets.xcassets */; };
 		A99D199E2C08A883004042FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99D199D2C08A883004042FD /* Preview Assets.xcassets */; };
 		A99D19A72C08A8FE004042FD /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D19A62C08A8FE004042FD /* AppFlowCoordinator.swift */; };
@@ -59,7 +58,6 @@
 		A98973982C0A0313008B1DC1 /* DishEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishEntity.swift; sourceTree = "<group>"; };
 		A99D19932C08A87E004042FD /* ShariUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShariUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99D19962C08A87E004042FD /* ShariUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShariUIApp.swift; sourceTree = "<group>"; };
-		A99D19982C08A87E004042FD /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		A99D199A2C08A883004042FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A99D199D2C08A883004042FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A99D19A62C08A8FE004042FD /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
@@ -235,7 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				A99D19AE2C08A9BF004042FD /* ViewFlowCoordinator.swift */,
-				A99D19982C08A87E004042FD /* ContainerView.swift */,
 				A0A112EC2C0D99CB00ED69BB /* RestaurantDishListView */,
 				A0A112C02C0D3AA100ED69BB /* SettingsView */,
 				A0A112BF2C0D3A9900ED69BB /* GlossaryView */,
@@ -330,7 +327,6 @@
 				A989738A2C0A0226008B1DC1 /* DefaultReviewListRepository.swift in Sources */,
 				A99D19A92C08A907004042FD /* AppDIContainer.swift in Sources */,
 				A98973992C0A0313008B1DC1 /* DishEntity.swift in Sources */,
-				A99D19992C08A87E004042FD /* ContainerView.swift in Sources */,
 				A0A112E52C0D5A1200ED69BB /* Constants.swift in Sources */,
 				A98973952C0A02DF008B1DC1 /* FileGenerator.swift in Sources */,
 				A99D19B12C08AABA004042FD /* RestaurantListView.swift in Sources */,
