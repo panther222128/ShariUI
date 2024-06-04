@@ -5,18 +5,18 @@
 //  Created by Horus on 5/30/24.
 //
 
-import Foundation
+import SwiftUI
 
 @MainActor
 protocol RestaurantListViewModel {
     var listItems: [RestaurantListItemViewModel] { get }
     
     func loadListItems() async throws
-    func didSelectItem(restaurant: RestaurantListItemViewModel) -> RestaurantDishListView?
+    func didSelectItem(restaurant: RestaurantListItemViewModel) -> NavigationLink<VStack<TupleView<(Text, Text)>>, RestaurantDishListView>?
 }
 
 struct RestaurantListViewModelActions {
-    let showRestaurantDishListView: (_ restaurant: Restaurant) -> RestaurantDishListView
+    let showRestaurantDishListView: (_ restaurant: Restaurant) -> NavigationLink<VStack<TupleView<(Text, Text)>>, RestaurantDishListView>
 }
 
 @Observable
@@ -38,13 +38,12 @@ final class DefaultRestaurantListViewModel: RestaurantListViewModel {
     func loadListItems() async throws {
         let domain = try await repository.fetchRestaurants()
         restaurants = domain
-        listItems = domain.map { .init(id: $0.id, restaurantName: $0.name, date: $0.date) }
+        listItems = restaurants.map { .init(id: $0.id, restaurantName: $0.name, date: $0.date) }
     }
     
-    func didSelectItem(restaurant: RestaurantListItemViewModel) -> RestaurantDishListView? {
+    func didSelectItem(restaurant: RestaurantListItemViewModel) -> NavigationLink<VStack<TupleView<(Text, Text)>>, RestaurantDishListView>? {
         if let index = restaurants.firstIndex(where: { $0.id == restaurant.id }) {
-            let restaurant = restaurants[index]
-            return actions.showRestaurantDishListView(restaurant)
+            return actions.showRestaurantDishListView(restaurants[index])
         } else {
             return nil
         }

@@ -16,12 +16,7 @@ struct RestaurantListView: View {
     var body: some View {
         List {
             ForEach(viewModel.listItems) { item in
-                NavigationLink(destination: viewModel.didSelectItem(restaurant: item)) {
-                    VStack {
-                        Text(item.restaurantName)
-                        Text(item.date.formatYearMonthDate())
-                    }
-                }
+                viewModel.didSelectItem(restaurant: item)
             }
         }
         .toolbar {
