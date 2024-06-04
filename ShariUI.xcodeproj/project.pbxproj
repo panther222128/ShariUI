@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A03922532C0EB12800F418E5 /* DishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922522C0EB12800F418E5 /* DishDetailView.swift */; };
+		A03922552C0EB15300F418E5 /* StudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922542C0EB15300F418E5 /* StudioView.swift */; };
+		A03922572C0EB15900F418E5 /* TasteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922562C0EB15900F418E5 /* TasteListView.swift */; };
+		A03922592C0EB17D00F418E5 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03922582C0EB17D00F418E5 /* PreviewView.swift */; };
 		A0A112C22C0D3AB100ED69BB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A112C12C0D3AB100ED69BB /* SettingsView.swift */; };
 		A0A112C42C0D3AB800ED69BB /* GlossaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A112C32C0D3AB800ED69BB /* GlossaryView.swift */; };
 		A0A112E02C0D554B00ED69BB /* RestaurantListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A112DF2C0D554B00ED69BB /* RestaurantListItemViewModel.swift */; };
@@ -16,6 +20,8 @@
 		A0A112E92C0D802300ED69BB /* GlossaryListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A112E82C0D802300ED69BB /* GlossaryListItemViewModel.swift */; };
 		A0A112EB2C0D808A00ED69BB /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A112EA2C0D808A00ED69BB /* SearchBar.swift */; };
 		A0A112EE2C0D99E100ED69BB /* RestaurantDishListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A112ED2C0D99E100ED69BB /* RestaurantDishListView.swift */; };
+		A0D6E2FE2C0EB70500D350CE /* DishDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6E2FD2C0EB70500D350CE /* DishDetailViewModel.swift */; };
+		A0D6E3002C0EBA3300D350CE /* SettingsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D6E2FF2C0EBA3300D350CE /* SettingsItemView.swift */; };
 		A98973862C0A01FC008B1DC1 /* ReviewListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98973852C0A01FC008B1DC1 /* ReviewListRepository.swift */; };
 		A989738A2C0A0226008B1DC1 /* DefaultReviewListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98973892C0A0226008B1DC1 /* DefaultReviewListRepository.swift */; };
 		A989738D2C0A0270008B1DC1 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989738C2C0A0270008B1DC1 /* Dish.swift */; };
@@ -38,6 +44,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A03922522C0EB12800F418E5 /* DishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailView.swift; sourceTree = "<group>"; };
+		A03922542C0EB15300F418E5 /* StudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioView.swift; sourceTree = "<group>"; };
+		A03922562C0EB15900F418E5 /* TasteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteListView.swift; sourceTree = "<group>"; };
+		A03922582C0EB17D00F418E5 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		A0A112C12C0D3AB100ED69BB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		A0A112C32C0D3AB800ED69BB /* GlossaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryView.swift; sourceTree = "<group>"; };
 		A0A112DF2C0D554B00ED69BB /* RestaurantListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListItemViewModel.swift; sourceTree = "<group>"; };
@@ -47,6 +57,8 @@
 		A0A112E82C0D802300ED69BB /* GlossaryListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryListItemViewModel.swift; sourceTree = "<group>"; };
 		A0A112EA2C0D808A00ED69BB /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		A0A112ED2C0D99E100ED69BB /* RestaurantDishListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDishListView.swift; sourceTree = "<group>"; };
+		A0D6E2FD2C0EB70500D350CE /* DishDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewModel.swift; sourceTree = "<group>"; };
+		A0D6E2FF2C0EBA3300D350CE /* SettingsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItemView.swift; sourceTree = "<group>"; };
 		A98973852C0A01FC008B1DC1 /* ReviewListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListRepository.swift; sourceTree = "<group>"; };
 		A98973892C0A0226008B1DC1 /* DefaultReviewListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultReviewListRepository.swift; sourceTree = "<group>"; };
 		A989738C2C0A0270008B1DC1 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
@@ -80,6 +92,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A039224F2C0EB0EF00F418E5 /* DishDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				A03922522C0EB12800F418E5 /* DishDetailView.swift */,
+				A0D6E2FD2C0EB70500D350CE /* DishDetailViewModel.swift */,
+			);
+			path = DishDetailView;
+			sourceTree = "<group>";
+		};
+		A03922502C0EB10200F418E5 /* TasteListView */ = {
+			isa = PBXGroup;
+			children = (
+				A03922562C0EB15900F418E5 /* TasteListView.swift */,
+			);
+			path = TasteListView;
+			sourceTree = "<group>";
+		};
+		A03922512C0EB10900F418E5 /* StudioView */ = {
+			isa = PBXGroup;
+			children = (
+				A03922542C0EB15300F418E5 /* StudioView.swift */,
+				A03922582C0EB17D00F418E5 /* PreviewView.swift */,
+			);
+			path = StudioView;
+			sourceTree = "<group>";
+		};
 		A0A112BF2C0D3A9900ED69BB /* GlossaryView */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				A0A112C12C0D3AB100ED69BB /* SettingsView.swift */,
+				A0D6E2FF2C0EBA3300D350CE /* SettingsItemView.swift */,
 			);
 			path = SettingsView;
 			sourceTree = "<group>";
@@ -237,6 +276,9 @@
 				A0A112C02C0D3AA100ED69BB /* SettingsView */,
 				A0A112BF2C0D3A9900ED69BB /* GlossaryView */,
 				A99D19B22C08AEC5004042FD /* RestaurantListView */,
+				A039224F2C0EB0EF00F418E5 /* DishDetailView */,
+				A03922512C0EB10900F418E5 /* StudioView */,
+				A03922502C0EB10200F418E5 /* TasteListView */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -326,23 +368,29 @@
 				A99D19AD2C08A928004042FD /* AppConfiguration.swift in Sources */,
 				A989738A2C0A0226008B1DC1 /* DefaultReviewListRepository.swift in Sources */,
 				A99D19A92C08A907004042FD /* AppDIContainer.swift in Sources */,
+				A03922592C0EB17D00F418E5 /* PreviewView.swift in Sources */,
 				A98973992C0A0313008B1DC1 /* DishEntity.swift in Sources */,
 				A0A112E52C0D5A1200ED69BB /* Constants.swift in Sources */,
 				A98973952C0A02DF008B1DC1 /* FileGenerator.swift in Sources */,
 				A99D19B12C08AABA004042FD /* RestaurantListView.swift in Sources */,
 				A99D19B42C08AEEA004042FD /* RestaurantListViewModel.swift in Sources */,
 				A99D19A72C08A8FE004042FD /* AppFlowCoordinator.swift in Sources */,
+				A0D6E3002C0EBA3300D350CE /* SettingsItemView.swift in Sources */,
 				A99D19AF2C08A9BF004042FD /* ViewFlowCoordinator.swift in Sources */,
 				A0A112EB2C0D808A00ED69BB /* SearchBar.swift in Sources */,
 				A98973972C0A030C008B1DC1 /* RestaurantEntity.swift in Sources */,
+				A03922552C0EB15300F418E5 /* StudioView.swift in Sources */,
 				A0A112C42C0D3AB800ED69BB /* GlossaryView.swift in Sources */,
+				A0D6E2FE2C0EB70500D350CE /* DishDetailViewModel.swift in Sources */,
 				A98973912C0A0283008B1DC1 /* TasteCategory.swift in Sources */,
 				A98973862C0A01FC008B1DC1 /* ReviewListRepository.swift in Sources */,
 				A0A112E02C0D554B00ED69BB /* RestaurantListItemViewModel.swift in Sources */,
 				A98973932C0A02D1008B1DC1 /* ReviewListStorage.swift in Sources */,
 				A0A112E72C0D7F4300ED69BB /* GlossaryViewModel.swift in Sources */,
 				A989738D2C0A0270008B1DC1 /* Dish.swift in Sources */,
+				A03922532C0EB12800F418E5 /* DishDetailView.swift in Sources */,
 				A0A112EE2C0D99E100ED69BB /* RestaurantDishListView.swift in Sources */,
+				A03922572C0EB15900F418E5 /* TasteListView.swift in Sources */,
 				A99D19AB2C08A913004042FD /* SceneDIContainer.swift in Sources */,
 				A99D19972C08A87E004042FD /* ShariUIApp.swift in Sources */,
 				A0A112C22C0D3AB100ED69BB /* SettingsView.swift in Sources */,
