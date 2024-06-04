@@ -5,7 +5,7 @@
 //  Created by Horus on 5/30/24.
 //
 
-import Foundation
+import SwiftUI
 
 protocol ViewFlowCoordinatorDependencies {
     func makeRestaurantListView(actions: RestaurantListViewModelActions) -> RestaurantListView
@@ -16,7 +16,7 @@ protocol ViewFlowCoordinatorDependencies {
 }
 
 // MARK: - NavigationStack
-final class ViewFlowCoordinator {
+struct ViewFlowCoordinator: View {
     
     private let dependencies: ViewFlowCoordinatorDependencies
     
@@ -24,10 +24,27 @@ final class ViewFlowCoordinator {
         self.dependencies = dependencies
     }
     
-    func start() -> ContainerView {
-        return ContainerView(viewFlowCoordinator: self)
+    var body: some View {
+        NavigationStack {
+            TabView {
+                dependencies.makeRestaurantListView(actions: .init(showRestaurantDishListView: showRestaurantDishListView(restaurant:)))
+                    .tabItem {
+                        Label("오마카세", systemImage: "list.bullet")
+                    }
+                
+                dependencies.makeGlossaryView()
+                    .tabItem {
+                        Label("용어사전", systemImage: "book.closed")
+                    }
+                
+                dependencies.makeSettingsView()
+                    .tabItem {
+                        Label("설정", systemImage: "gear")
+                    }
+            }
+        }
     }
-    
+
     func makeRestaurantListView() -> RestaurantListView {
         let actions: RestaurantListViewModelActions = .init(showRestaurantDishListView: showRestaurantDishListView(restaurant:))
         return dependencies.makeRestaurantListView(actions: actions)

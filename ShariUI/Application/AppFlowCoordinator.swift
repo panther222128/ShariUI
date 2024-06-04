@@ -15,10 +15,10 @@ final class AppFlowCoordinator {
         self.appDIContainer = appDIContainer
     }
     
-    func start() -> ContainerView {
+    func start() -> ViewFlowCoordinator {
         let sceneDIContainer = appDIContainer.makeSceneDIContainer()
         let flow = sceneDIContainer.makeViewFlowCoordinator()
-        return flow.start()
+        return flow
     }
     
 }
