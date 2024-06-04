@@ -5,7 +5,6 @@
 //  Created by Horus on 5/30/24.
 //
 
-import SwiftUI
 import SwiftData
 
 final class SceneDIContainer: ViewFlowCoordinatorDependencies {
