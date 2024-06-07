@@ -11,20 +11,25 @@ struct RestaurantListView: View {
     
     @State private var showingAlert = false
     @State private var name = ""
+    @State private var navigateToDetail = false
     private var viewModel: (any RestaurantListViewModel)!
     
     var body: some View {
         List {
             ForEach(viewModel.listItems) { item in
-                viewModel.didSelectItem(restaurant: item)?
-                    .swipeActions(edge: .trailing) {
-                        Button(role: .destructive) {
-                            viewModel.didDeleteRestaurant(restaurantId: item.id)
-                        } label: {
-                            Text("삭제")
-                        }
+                NavigationLink(destination: viewModel.didSelectItem(restaurant: item)) {
+                    VStack {
+                        Text(item.restaurantName)
+                        Text(item.date.formatYearMonthDate())
                     }
-                    
+                }
+                .swipeActions(edge: .trailing) {
+                    Button(role: .destructive) {
+                        viewModel.didDeleteRestaurant(restaurantId: item.id)
+                    } label: {
+                        Text("삭제")
+                    }
+                }
             }
         }
         .toolbar {
@@ -36,11 +41,25 @@ struct RestaurantListView: View {
             .alert("오마카세 이름", isPresented: $showingAlert) {
                 TextField(name, text: $name)
                 Button("취소") {
-                    
+                    print(name)
                 }
-                viewModel.didConfirm(restaurantName: name)
+                Button("확인") {
+                    viewModel.didAddRestaurant(name: name)
+                    Task {
+                        try await viewModel.loadListItems()
+                    }
+                    navigateToDetail = true
+                }
             }
         }
+        .background(
+            NavigationLink(destination: viewModel.didConfirm(restaurantName: name), isActive: $navigateToDetail) {
+                EmptyView()
+            }
+                .onSubmit {
+                    navigateToDetail = false
+                }
+        )
         .listStyle(.plain)
     }
     

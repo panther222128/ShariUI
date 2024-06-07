@@ -14,13 +14,13 @@ protocol RestaurantListViewModel {
     func loadListItems() async throws
     func didAddRestaurant(name: String)
     func didDeleteRestaurant(restaurantId: String)
-    func didSelectItem(restaurant: RestaurantListItemViewModel) -> NavigationLink<VStack<TupleView<(Text, Text)>>, RestaurantDishListView>?
-    func didConfirm(restaurantName: String) -> NavigationLink<Button<Text>, StudioView>?
+    func didSelectItem(restaurant: RestaurantListItemViewModel) -> RestaurantDishListView?
+    func didConfirm(restaurantName: String) -> StudioView
 }
 
 struct RestaurantListViewModelActions {
-    let showStudioView: (_ restaurantId: String, _ restaurantName: String) -> NavigationLink<Button<Text>, StudioView>
-    let showRestaurantDishListView: (_ restaurant: Restaurant) -> NavigationLink<VStack<TupleView<(Text, Text)>>, RestaurantDishListView>
+    let showStudioView: (_ restaurantId: String, _ restaurantName: String) -> StudioView
+    let showRestaurantDishListView: (_ restaurant: Restaurant) -> RestaurantDishListView?
 }
 
 @Observable
@@ -41,7 +41,7 @@ final class DefaultRestaurantListViewModel: RestaurantListViewModel {
         self.listItems = []
     }
     
-    func didConfirm(restaurantName: String) -> NavigationLink<Button<Text>, StudioView>? {
+    func didConfirm(restaurantName: String) -> StudioView {
         return actions.showStudioView(restaurantId, restaurantName)
     }
     
@@ -66,7 +66,7 @@ final class DefaultRestaurantListViewModel: RestaurantListViewModel {
         listItems = restaurants.map { .init(id: $0.id, restaurantName: $0.name, date: $0.date) }
     }
     
-    func didSelectItem(restaurant: RestaurantListItemViewModel) -> NavigationLink<VStack<TupleView<(Text, Text)>>, RestaurantDishListView>? {
+    func didSelectItem(restaurant: RestaurantListItemViewModel) -> RestaurantDishListView? {
         if let index = restaurants.firstIndex(where: { $0.id == restaurant.id }) {
             return actions.showRestaurantDishListView(restaurants[index])
         } else {

@@ -59,21 +59,12 @@ struct ViewFlowCoordinator: View {
         return dependencies.makeSettingsView()
     }
     
-    private func showRestaurantDishListView(restaurant: Restaurant) -> NavigationLink<VStack<TupleView<(Text, Text)>>, RestaurantDishListView> {
-        return NavigationLink(destination: dependencies.makeRestaurantDishListView()) {
-            VStack {
-                Text(restaurant.name)
-                Text(restaurant.date.formatYearMonthDate())
-            }
-        }
+    private func showRestaurantDishListView(restaurant: Restaurant) -> RestaurantDishListView {
+        return dependencies.makeRestaurantDishListView()
     }
     
-    private func showStudioView(restaurantId: String, restaurantName: String) -> NavigationLink<Button<Text>, StudioView> {
-        NavigationLink(destination: dependencies.makeStudioView()) {
-            Button("확인") {
-                
-            }
-        }
+    private func showStudioView(restaurantId: String, restaurantName: String) -> StudioView {
+        return dependencies.makeStudioView()
     }
     
 }
