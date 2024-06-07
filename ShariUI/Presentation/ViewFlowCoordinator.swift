@@ -46,19 +46,11 @@ struct ViewFlowCoordinator: View {
         }
     }
 
-    func makeRestaurantListView() -> RestaurantListView {
+    private func makeRestaurantListView() -> RestaurantListView {
         let actions: RestaurantListViewModelActions = .init(showStudioView: showStudioView(restaurantId:restaurantName:), showRestaurantDishListView: showRestaurantDishListView(restaurant:))
         return dependencies.makeRestaurantListView(actions: actions)
     }
-    
-    func makeGlossaryView() -> GlossaryView {
-        return dependencies.makeGlossaryView()
-    }
-    
-    func makeSettingsView() -> SettingsView {
-        return dependencies.makeSettingsView()
-    }
-    
+
     private func showRestaurantDishListView(restaurant: Restaurant) -> RestaurantDishListView {
         return dependencies.makeRestaurantDishListView()
     }
