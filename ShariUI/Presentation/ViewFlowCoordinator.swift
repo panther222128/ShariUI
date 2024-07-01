@@ -10,6 +10,7 @@ import SwiftUI
 protocol ViewFlowCoordinatorDependencies {
     func makeRestaurantListView(actions: RestaurantListViewModelActions) -> RestaurantListView
     func makeGlossaryView() -> GlossaryView
+    func makeInformationView() -> InformationView
     func makeSettingsView() -> SettingsView
     
     func makeRestaurantDishListView() -> RestaurantDishListView
@@ -37,6 +38,11 @@ struct ViewFlowCoordinator: View {
             dependencies.makeGlossaryView()
                 .tabItem {
                     Label("용어사전", systemImage: "book.closed")
+                }
+            
+            dependencies.makeInformationView()
+                .tabItem {
+                    Label("정보", systemImage: "info.circle")
                 }
             
             dependencies.makeSettingsView()

@@ -50,6 +50,11 @@ final class SceneDIContainer: ViewFlowCoordinatorDependencies {
     }
     
     @MainActor
+    func makeInformationView() -> InformationView {
+        return InformationView()
+    }
+    
+    @MainActor
     func makeSettingsView() -> SettingsView {
         return SettingsView()
     }
